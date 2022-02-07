@@ -7,8 +7,8 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 title = "Lj1ang's blog"
 languageCode = "zh-cn"
-#baseURL = "https://lj1ang.github.io/"
-baseURL = "https://example.org/"
+baseURL = "https://lj1ang.github.io/"
+#baseURL = "https://example.org/"
 copyright = "© {year} Lj1ang"
 
 # Add your Disqus shortname here.
