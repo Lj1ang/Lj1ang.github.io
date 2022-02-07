@@ -83,24 +83,4 @@ copyright = "© {year} Lj1ang"
   title = "技术"
   url = "/study"
   
-[[menu.main]]
-  identifier = "f"
-  name = "f"
-  title = "f"
-  url = "/f"
-  
-[[menu.main]]
-  identifier = "test"
-  name = "test"
-  title = "test"
-  url = "/test"
 
-[[menu.main]]
-  identifier = "sec"
-  name = "sec"
-  parent = "test"
-  title = "sec"
-  url = "/test/sec"
-  
-
-  
