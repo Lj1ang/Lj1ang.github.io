@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <title>cmake | Lj1ang&#39;s blog</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/lj1ang.github.io\/study\/cmake\/",
+      "name": "cmake",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">关于</a>
+      </li>
+    
+      <li>
+        <a  href="/study">技术</a>
+      </li>
+    
+      <li>
+        <a  href="/movie">电影</a>
+      </li>
+    
+      <li>
+        <a  href="/blog">随想</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">cmake</h1>
+            <time datetime="2022-02-06 22:57:02 &#43;0800 CST" class="post__date">Feb 6 2022</time> 
+          </header>
+          <article class="post__content">
+              
+<h1 id="ch1">CH1</h1>
+<h2 id="11">1.1<a class="anchor" href="#11">#</a></h2>
+<pre><code class="language-cmake">    cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+    project(recipe-01 LANGUAGES CXX)
+    add_executable(hello-world hello-world.cpp)
+</code></pre>
+<ul>
+<li>The second line declares the name of the project (recipe-01) and thesupported language ( CXX stands for C++)</li>
+<li>to create a new target: the executable hello-world</li>
+<li>Save the file in the same directory as the source file hello-world.cpp .</li>
+<li>Remember that it can only be named CMakeLists.txt .</li>
+</ul>
+<hr>
+<p>CLI</p>
+<pre><code class="language-CLI">$ mkdir -p build
+$ cd build
+$ cmake ..
+$ cmake --build .
+</code></pre>
+<p>  or</p>
+<pre><code class="language-CKI">$ cmake -H. -Bbuild
+</code></pre>
+<hr>
+<p>CMake does not enforce a specific name or a
+specific location for the build directory.</p>
+<pre><code class="language-CLI">$mkdir -p /tmp/someplace
+$cd /tmp/someplace
+$cmake /path/to/source
+$cmake --build .
+</code></pre>
+<pre><code class="language-CLI">$ cmake --build . --target help
+</code></pre>
+<p>reveals that CMake generates more targets than those strictly needed for building
+the executable itself.</p>
+<pre><code class="language-CLI">$ cmake --help
+</code></pre>
+<p>At the bottom, you will find the list of available generators.</p>
+<h2 id="12-switch-generators-for-the-same-project">1.2 Switch generators for the same project<a class="anchor" href="#12-switch-generators-for-the-same-project">#</a></h2>
+<p><a href="http://www.aosabook.org/en/posa/ninja.html">http://www.aosabook.org/en/posa/ninja.html</a></p>
+<pre><code class="language-CLI">$ mkdir -p build
+$ cd build
+$ cmake -G Ninja ..
+</code></pre>
+<pre><code class="language-CLI">$ cmake --build .
+</code></pre>
+<p>  build.ninja and rules.ninja : Contain all the build statements and build rules
+for Ninja.(build 构建)</p>
+<p> cmake_install.cmake : CMake script handling install rules and which is used at
+install time.(install 安装)</p>
+<h2 id="13-building-and-linking-static-and-shared-libraries">1.3 Building and linking static and shared libraries<a class="anchor" href="#13-building-and-linking-static-and-shared-libraries">#</a></h2>
+<p>Add two lines as follow:</p>
+<pre><code class="language-cmake">add_library(message
+            STATIC
+            Message.hpp
+            Message.cpp
+    )
+target_link_libraries(hello-world message)
+</code></pre>
+<p>run the same command in CLI as before</p>
+<hr>
+<p><strong>How it works?</strong></p>
+<p><code>add_library(message STATIC Message.hpp Message.cpp)</code></p>
+<ul>
+<li>compiling the specified sources into a library</li>
+<li>The first argument to add_library is the name of the target.The same
+name can be used throughout CMakeLists.txt to refer to the library.</li>
+<li>The library extension is determined based on the second argument, STATIC or SHARED , and the operating system.</li>
+</ul>
+<hr>
+<p><strong>Second Arguements</strong></p>
+<ul>
+<li><code>STATIC</code>Archives of object files
+for use when linking other targets</li>
+<li><code>SHARED</code>libraries that can be
+linked dynamically and loaded at runtime. DSO(dynamic shared object)</li>
+<li><code>OBJECT</code> neithor archiving intto static lib nor being shared</li>
+<li><code>MODULE</code> DSOs(DOS组)</li>
+</ul>
+<blockquote>
+<ul>
+<li><code>IMPORTED</code></li>
+<li><code>INTERFACE</code></li>
+<li><code>ALIAS</code></li>
+</ul>
+</blockquote>
+<hr>
+<p><code>target_link_libraries(hello-world message)</code>not linked to any other target within the project, but may be loaded dynamically later on</p>
+<ul>
+<li>Links the library into the executable.</li>
+<li><strong>We thus ensure that the message library is
+always built before we attempt to link it to the hello-world executable.</strong>
+The build dir will contain the <code>libmessage.a</code> static library</li>
+</ul>
+<hr>
+<p><strong>Obtain static library and shared library</strong></p>
+<pre><code class="language-cmake">cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+
+project(recipe-03 LANGUAGES CXX)
+
+add_library(message-objs
+    OBJECT
+        Message.hpp
+        Message.cpp
+    )
+
+# this is only needed for older compilers
+# but doesn't hurt either to have it
+set_target_properties(message-objs
+    PROPERTIES
+        POSITION_INDEPENDENT_CODE 1
+    )
+
+add_library(message-shared
+    SHARED
+        $&lt;TARGET_OBJECTS:message-objs&gt;
+    )
+
+add_library(message-static
+    STATIC
+        $&lt;TARGET_OBJECTS:message-objs&gt;
+    )
+
+add_executable(hello-world hello-world.cpp)
+
+target_link_libraries(hello-world message-static)
+</code></pre>
+<p>Generate the two libraries with the same name <code>message</code> instead of
+<code>message-static</code> and <code>message-shared</code></p>
+<pre><code class="language-cmake">add_library(message-shared
+SHARED
+$&lt;TARGET_OBJECTS:message-objs&gt;
+)
+set_target_properties(message-shared
+PROPERTIES
+OUTPUT_NAME &quot;message&quot;
+)
+add_library(message-static
+STATIC
+$&lt;TARGET_OBJECTS:message-objs&gt;
+)
+set_target_properties(message-static
+PROPERTIES
+OUTPUT_NAME &quot;message&quot;
+)
+</code></pre>
+<p>Controlling compilation with conditionals</p>
+<p>How to do it</p>
+
+
+              
+          </article>
+          
+
+ <div class="pagination">
+  
+
+  
+    <a class="pagination__item" href="https://lj1ang.github.io/study/docker/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >docker</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="GitHub"
+        href="https://github.com/Lj1ang"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://lj1ang.github.io/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:2872509481@qq.com"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://lj1ang.github.io/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2022 Lj1ang</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#11">1.1</a></li>
+    <li><a href="#12-switch-generators-for-the-same-project">1.2 Switch generators for the same project</a></li>
+    <li><a href="#13-building-and-linking-static-and-shared-libraries">1.3 Building and linking static and shared libraries</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
