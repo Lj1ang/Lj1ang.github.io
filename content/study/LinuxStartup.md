@@ -93,3 +93,31 @@ $sudo nvidia-settings
 [PRIME Profiles --> NVIDIA(Performance Mode)](https://forums.developer.nvidia.com/t/cant-install-nvidia-driver-in-ubuntu-20-04-2-kernel-version-5-8-0-55/180785/11)
 
 开启电脑和显示器的高刷
+
+## Part6 各种环境问题
+
+### conda
+
+#### 创建环境
+
+```bash
+$ conda create -n new --clone base
+```
+
+or
+
+```bash
+$ conda list --export > requirements.txt
+$ conda create -n new --file requirements.txt
+```
+
+[原帖](https://stackoverflow.com/questions/58513745/create-virtual-environment-with-all-packages-shown-in-conda-list)
+
+#### Linux 环境变量
+
+`export $D2L=/...`
+
+写入~/.profile 并 re-login
+
+
+
