@@ -5,7 +5,7 @@
 缺失的能力 现在距离去年八月份已经过去了八个月了。在这八个月里我像一个脚本，循环地做着专业课，项目，健身这三件事，在学技术的同时变得越来越冰冷。我不得不承认我失去了非工作生活。即使我能认识到我已经不太会娱乐和放送了，即使我知道我知道只会跟所有的朋友聊技术和未来的规划，而丝毫不关心其他的东西，即使我知道我已经相当无聊，我不关心生活了，我仍然会在思考完这些之后去继续去学技术，继续去聊技术。
 我在收获技术能力的同时，失去了让人感到舒适的交互能力。
 ​ 这是一篇没有解决方案的blog。不过由于某种机缘巧合，这个为期八个月的阶段结束了。
-​ 一个有阳光的下
+​ 一个有阳光的下午
 在one cup 咖啡馆
 时间显得没有那么重要
 ​</description></item><item><title>LinuxStartup</title><link>https://lj1ang.github.io/study/linuxstartup/</link><pubDate>Fri, 25 Mar 2022 22:58:10 +0800</pubDate><guid>https://lj1ang.github.io/study/linuxstartup/</guid><description>Preface 写这篇帖子的起因是前几天给ubnubtu装了个KDE，于是我的linux有了GNOME和KDE两套GUI，紧接着出现了各种问题。直到今天中午我的linux在recovery模式下彻底卡死，我打算重新装一个ubuntu。这篇帖子旨在帮助初学者快速装上双系统并解决linux的网络和中文输入法等问题，不必花大量时间看一些无效的解决方案。
