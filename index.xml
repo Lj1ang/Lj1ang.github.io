@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lj1ang's blog</title><link>https://lj1ang.github.io/</link><description>Recent content on Lj1ang's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© {year} Lj1ang</copyright><lastBuildDate>Mon, 07 Feb 2022 00:30:44 +0800</lastBuildDate><atom:link href="https://lj1ang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>迷思</title><link>https://lj1ang.github.io/blog/%E8%BF%B7%E6%80%9D/</link><pubDate>Mon, 07 Feb 2022 00:30:44 +0800</pubDate><guid>https://lj1ang.github.io/blog/%E8%BF%B7%E6%80%9D/</guid><description>专业 ​ 专业和生活是密不可分的。培养方案决定了我这学期能有多少空余时间。也决定了我会遇见怎样一批人，也决定了我在本科期间所塑造的思维。四年的教育给人的改变是很大的。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lj1ang's blog</title><link>https://lj1ang.github.io/</link><description>Recent content on Lj1ang's blog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>© {year} Lj1ang</copyright><lastBuildDate>Fri, 25 Mar 2022 22:58:10 +0800</lastBuildDate><atom:link href="https://lj1ang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LinuxStartup</title><link>https://lj1ang.github.io/study/linuxstartup/</link><pubDate>Fri, 25 Mar 2022 22:58:10 +0800</pubDate><guid>https://lj1ang.github.io/study/linuxstartup/</guid><description>Preface 写这篇帖子的起因是前几天给ubnubtu装了个KDE，于是我的linux有了GNOME和KDE两套GUI，紧接着出现了各种问题。直到今天中午我的linux在recovery模式下彻底卡死，我打算重新装一个ubuntu。这篇帖子旨在帮助初学者快速装上双系统并解决linux的网络和中文输入法等问题，不必花大量时间看一些无效的解决方案。
+Part1 win11+ubuntu20.04.4LTS双系统这个教程是完全可行的，解释一下里面没有细讲的一些步骤 #### 安装类型的选择 为什么不选择 “安装ubuntu与windows manager共存”？ ubuntu与windows manager共存意味着 把ubuntu的引导程序安装在windows的系统盘（即C盘），这样如果你的ubuntu除了问题可能会连带这windows一起出问题。
+分区类型 分为primary partition 和logical partition
+Part2 如何魔法上网 primary partition: 是一个可引导分区，上面的教程把该分区用于efi引导 logical partition：非引导分区，用于存放数据 VPS 首先你需要一个vps，然后你需要一个代理客户端。
+贴一个腐竹写的帖子
+以及yxh 写的帖子
+我自己选择了搬瓦共的vps
+代理客户端 首先，在linux下运行一个可执行文件的方法不一定是双击。右键打开终端，进到当前目录， chmod +x ./你的文件名 目前了解到的代理客户端种类
+qv2ray v2raya clash 我自己使用的是qv2ray.v1.99.6-linux.AppleImage客户端以及v2ray-core作为核心文件
+这篇可以了解一下如何配置qv2ray
+这篇讲是实操。需要自己缝合一下两篇教程，把vmess贴到qv2ray里去（比较新版的qv2ray似乎不支持vmess了？）
+到现在可以实现浏览器的科学上网了。但是shell还不行，所以会用不了git
+配置shell代理 export https_proxy=127.0.0.1:你主机的https代理端口
+那么这个代理端口去哪里找？
+查看代理客户端或者系统设置里的代理，通常是代理客户端有一个默认值
+Part3 输入法 ubuntu自带的输入法没有中文输入（反正我没找到）
+解决方案
+这一篇讲的是如何下载输入法
+然后借鉴这一篇的配置方法
+Part4 如何上qq 卓哥分享的一个repo
+Part5 Ubuntu下的Nvidia driver 在CLI
+$sudo nvidia-settings PRIME Profiles &amp;ndash;&amp;gt; NVIDIA(Performance Mode)</description></item><item><title>迷思</title><link>https://lj1ang.github.io/blog/%E8%BF%B7%E6%80%9D/</link><pubDate>Mon, 07 Feb 2022 00:30:44 +0800</pubDate><guid>https://lj1ang.github.io/blog/%E8%BF%B7%E6%80%9D/</guid><description>专业 ​ 专业和生活是密不可分的。培养方案决定了我这学期能有多少空余时间。也决定了我会遇见怎样一批人，也决定了我在本科期间所塑造的思维。四年的教育给人的改变是很大的。
 ​ 但实际上一年的变化就足够明显。我很庆幸我没有把化工学的知识带入到生活中来。今年有相当多可遇不可求的机会，都带给我思考。尤其是在今年十月份，跟苏聊过后疯狂地对互联化工这个方向感到失望，觉得这还是一个被营销的概念,所谓“计算机的学生学不懂化工”，在我看来不过是为了把这三四十个学生从思想上捆绑到天坑专业上。于是我在大二这个时间点上，焦虑地为自己的未来做规划。
 大学做题家 ​ 我又成了一个做题家，跟高三一样。我周围也都是做题家。我可以跟他们畅聊强化传热的措施和相图分析，但如果问他们想去哪读研，有什么感兴趣的领域和研究方向，会不会什么专业课以外的东西，他们只会沉默。我在大学的启发是后知后觉的。我在大一遇到的老师只会吹牛和一昧的关注自己的科研。他们把自己的成果灌输给学术，然而并不考虑学生们是否对感兴趣。这是他们跟我遇到的大二的老师最大的不同。我认为不是每个老师都有启发学生的能力，也不是每个老师都配被称为老师。
 ​ 我并不是一个愿意全副身心投入到学习中的人，我早在上高中的时候就认识到了这一点，也是从高中开始探索自己除了学习和写作业还能做什么其他事，但迫于高考压力仍然需要花大量的时间去学习。然后我来到了川大，我看着周围的同学，仍然继续着高中应试的路路线去发展，学习刷题循环往复。我不评判学校的教学水平，但是应试对人的成长能有多大帮助？所谓公共基础课对人的世界观的形成又能有多大帮助？
@@ -12,7 +33,7 @@
 这也导致了艾瑞卡在被机构带走时那种歇斯底里的情绪的发泄，梅丽迪斯在自己房间里创作，躺在地上时那种镜头展现的空虚与无助，和最后梅丽迪斯吃下有毒药的蛋糕而自杀死去的结局，在亨利留在学校的最后一天。梅丽迪斯说：“真讽刺”。
 这种支柱被一下被抽空的感觉表达，让我感受最为深切。影片虽以教育为叙事的基础，但我觉得导演主要想要探讨的是，当独立的个体面对人生的各种问题以及其附加而来的各种负面情绪时，个体应该怎么做。
 似乎有一个能给予理解的人做精神支柱，会让人更容易面对。然而精神支柱从何而来？。这就要谈及另一个让我感触颇深的情节：影片通过几个镜头的叙事，表现了几个已成家的老师在面对这种问题时遇到所处的现状。其家人或是表情呆滞，或是不理解，或是对爱人仅求取自己所需。短短几十秒，影片便对家人这个选择进行了排除。“
-当然，影片给出了答案，但这个答案却像是在开玩笑：或许有一天，或者有那么一个时刻，我们才能遇见一个可以倾诉，可以依赖的人。“</description></item><item><title>docker</title><link>https://lj1ang.github.io/study/docker/</link><pubDate>Sun, 06 Feb 2022 22:58:02 +0800</pubDate><guid>https://lj1ang.github.io/study/docker/</guid><description>Docker Container container is a sandboxed process on your machine that is isolated from all other processes on the host machine.
+当然，影片给出了答案，但这个答案却像是在开玩笑：或许有一天，或者有那么一个时刻，我们才能遇见一个可以倾诉，可以依赖的人。</description></item><item><title>docker</title><link>https://lj1ang.github.io/study/docker/</link><pubDate>Sun, 06 Feb 2022 22:58:02 +0800</pubDate><guid>https://lj1ang.github.io/study/docker/</guid><description>Docker Container container is a sandboxed process on your machine that is isolated from all other processes on the host machine.
 Containers are great for continuous integration and continuous delivery (CI/CD) workflows.
 Container image When running a container, it uses an isolated filesystem. This custom filesystem is provided by a container image.
 the Docker client talks to the Docker daemon, which does the heavy lifting of building, running, and distributing your Docker containers.</description></item><item><title>cmake</title><link>https://lj1ang.github.io/study/cmake/</link><pubDate>Sun, 06 Feb 2022 22:57:02 +0800</pubDate><guid>https://lj1ang.github.io/study/cmake/</guid><description>CH1 1.1 cmake_minimum_required(VERSION 3.5 FATAL_ERROR) project(recipe-01 LANGUAGES CXX) add_executable(hello-world hello-world.cpp) The second line declares the name of the project (recipe-01) and thesupported language ( CXX stands for C++) to create a new target: the executable hello-world Save the file in the same directory as the source file hello-world.cpp . Remember that it can only be named CMakeLists.txt . CLI
