@@ -78,9 +78,15 @@ ubuntu自带的输入法没有中文输入（反正我没找到）
 
 
 
-## Part4 如何上qq 
+## Part4 一些常见软件
 
-[卓哥分享的一个repo](https://github.com/xiaozhangup/Icalingua/actions/runs/1859799770) 
+[Twitter](https://vitux.com/how-to-use-twitter-lite-app-on-ubuntu/#:~:text=Click%20on%20the%20three%20vertical,button%20to%20install%20the%20app.)
+
+[QQ](https://github.com/xiaozhangup/Icalingua/actions/runs/1859799770) 
+
+[UxPlay](https://github.com/FDH2/UxPlay)
+
+
 
 ## Part5 Ubuntu下的Nvidia driver
 
@@ -121,3 +127,54 @@ $ conda create -n new --file requirements.txt
 
 
 
+#### PlatformIO get-platformio.py httperror
+
+solution:
+
+```bash
+$export https_proxy="https://127.0.0.1:8888"
+$export http_proxy="http://127.0.0.1:8888"
+```
+
+
+
+### Part7 客制化之路
+
+#### shell
+
+zsh
+
+
+
+#### extension
+
+```
+$sudo apt install gnome-tweaks
+$ sudo apt install dconf-editor
+$ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+$ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+
+```
+
+#### shell
+
+[What is shell and How to change shell](https://itsfoss.com/install-switch-themes-gnome-shell/)
+
+
+
+#### theme
+
+- whiteSur-gtk-theme and icon
+- McMojave
+
+
+
+#### icon
+
+- mkos-big-sur
+- 
+
+#### wallpaper 
+
+- art blocks
+- 
