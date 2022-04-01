@@ -19,7 +19,7 @@ toc: ture
 
 [win11+ubuntu20.04.4LTS双系统](https://zhuanlan.zhihu.com/p/362092786)这个教程是完全可行的，解释一下里面没有细讲的一些步骤 #### 安装类型的选择 为什么**不选择** “安装ubuntu与windows manager共存”？ ubuntu与windows manager共存意味着 把ubuntu的引导程序安装在windows的系统盘（即C盘），这样如果你的ubuntu除了问题可能会连带这windows[一起出问题。](https://www.quora.com/What-does-installing-Ubuntu-alongside-Windows-mean#:~:text=In%20short%2C%20it%20means%20to,case%20after%20you%20are%20done. )
 
-#### 分区类型 
+### 分区类型 
 
 分为[primary partition 和logical partition](https://www.differencebetween.com/difference-between-primary-partition-and-vs-logical-partition/#:~:text=Primary%20partition%20is%20a%20bootable,data%20in%20an%20organized%20manner. )
 
@@ -28,7 +28,7 @@ toc: ture
 - primary partition: 是一个可引导分区，上面的教程把该分区用于efi引导 
 - logical partition：非引导分区，用于存放数据 
 
-#### VPS
+### VPS
 
 首先你需要一个vps，然后你需要一个代理客户端。 
 
@@ -38,7 +38,7 @@ toc: ture
 
 我自己选择了搬瓦共的vps 
 
-#### 代理客户端 
+### 代理客户端 
 
 首先，在linux下运行一个可执行文件的方法不一定是双击。右键打开终端，进到当前目录， chmod +x ./你的文件名 目前了解到的代理客户端种类
 
@@ -54,9 +54,7 @@ toc: ture
 
 到现在可以实现浏览器的科学上网了。但是shell还不行，所以会用不了git 
 
-
-
-#### 配置shell代理
+### 配置shell代理
 
 export https_proxy=127.0.0.1:你主机的https代理端口
 
@@ -119,15 +117,13 @@ $ conda create -n new --file requirements.txt
 
 [原帖](https://stackoverflow.com/questions/58513745/create-virtual-environment-with-all-packages-shown-in-conda-list)
 
-#### Linux 环境变量
+### Linux 环境变量
 
 `export $D2L=/...`
 
 写入~/.profile 并 re-login
 
-
-
-#### PlatformIO get-platformio.py httperror
+### PlatformIO get-platformio.py httperror
 
 solution:
 
@@ -138,17 +134,15 @@ $export http_proxy="http://127.0.0.1:8888"
 
 
 
-### Part7 客制化之路
+## Part7 客制化之路
 
-#### shell
+### shell
 
 zsh
 
+### extension
 
-
-#### extension
-
-```
+```bash
 $sudo apt install gnome-tweaks
 $ sudo apt install dconf-editor
 $ gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
@@ -156,25 +150,21 @@ $ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 ```
 
-#### shell
+### shell
 
 [What is shell and How to change shell](https://itsfoss.com/install-switch-themes-gnome-shell/)
 
-
-
-#### theme
+### theme
 
 - whiteSur-gtk-theme and icon
 - McMojave
 
-
-
-#### icon
+### icon
 
 - mkos-big-sur
 - 
 
-#### wallpaper 
+### wallpaper 
 
 - art blocks
 - 
