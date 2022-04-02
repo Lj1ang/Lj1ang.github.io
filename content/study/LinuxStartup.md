@@ -23,10 +23,12 @@ toc: ture
 
 分为[primary partition 和logical partition](https://www.differencebetween.com/difference-between-primary-partition-and-vs-logical-partition/#:~:text=Primary%20partition%20is%20a%20bootable,data%20in%20an%20organized%20manner. )
 
-## Part2 如何魔法上网 
-
 - primary partition: 是一个可引导分区，上面的教程把该分区用于efi引导 
 - logical partition：非引导分区，用于存放数据 
+
+## Part2 如何魔法上网 
+
+
 
 ### VPS
 
