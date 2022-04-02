@@ -6,12 +6,12 @@
 我在收获技术能力的同时，失去了让人感到舒适的交互能力。
 ​ 这是一篇没有解决方案的blog。不过由于某种机缘巧合，这个为期八个月的阶段结束了。
 ​ 一个有阳光的下午
-在one cup 咖啡馆
+在一杯咖啡馆
 时间显得没有那么重要
 ​</description></item><item><title>LinuxStartup</title><link>https://lj1ang.github.io/study/linuxstartup/</link><pubDate>Fri, 25 Mar 2022 22:58:10 +0800</pubDate><guid>https://lj1ang.github.io/study/linuxstartup/</guid><description>Preface 写这篇帖子的起因是前几天给ubnubtu装了个KDE，于是我的linux有了GNOME和KDE两套GUI，紧接着出现了各种问题。直到今天中午我的linux在recovery模式下彻底卡死，我打算重新装一个ubuntu。这篇帖子旨在帮助初学者快速装上双系统并解决linux的网络和中文输入法等问题，不必花大量时间看一些无效的解决方案。
 Part1 win11+ubuntu20.04.4LTS双系统这个教程是完全可行的，解释一下里面没有细讲的一些步骤 #### 安装类型的选择 为什么不选择 “安装ubuntu与windows manager共存”？ ubuntu与windows manager共存意味着 把ubuntu的引导程序安装在windows的系统盘（即C盘），这样如果你的ubuntu除了问题可能会连带这windows一起出问题。
 分区类型 分为primary partition 和logical partition
-Part2 如何魔法上网 primary partition: 是一个可引导分区，上面的教程把该分区用于efi引导 logical partition：非引导分区，用于存放数据 VPS 首先你需要一个vps，然后你需要一个代理客户端。
+primary partition: 是一个可引导分区，上面的教程把该分区用于efi引导 logical partition：非引导分区，用于存放数据 Part2 如何魔法上网 VPS 首先你需要一个vps，然后你需要一个代理客户端。
 贴一个腐竹写的帖子
 以及yxh 写的帖子
 我自己选择了搬瓦共的vps
