@@ -60,27 +60,28 @@ copyright = "© {year} Lj1ang"
 
 # Controls the navigation
 [[menu.main]]
-  identifier = "about"
-  name = "关于"
-  title = "关于"
-  url = "/"
-
-[[menu.main]]
-  identifier = "随想"
-  name = "随想"
-  title = "随想"
-  url = "/blog"
-  
-[[menu.main]]
   identifier = "电影"
   name = "电影"
   title = "电影"
   url = "/movie"
   
-[[menu.main]]
+ [[menu.main]]
+  identifier = "首页"
+  name = "首页"
+  title = "首页"
+  url = "/"
+  
+    [[menu.main]]
   identifier = "技术"
   name = "技术"
   title = "技术"
   url = "/study"
   
+  [[menu.main]]
+  identifier = "2"
+  name = "随想"
+  title = "随想"
+  url = "/blog"
+
+
 

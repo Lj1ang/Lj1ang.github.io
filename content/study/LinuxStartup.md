@@ -170,3 +170,12 @@ $ gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 - art blocks
 - 
+
+## 一些小坑
+
+### git
+
+`git remote set-url origin https://github.com/Lj1ang/convert2bitmap.git`
+
+`git push -uf origin main`
+
