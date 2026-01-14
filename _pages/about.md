@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student, Department of Computer Science, University of Illinois Chicago
+subtitle: PhD Student
 
 profile:
   align: right
-  image: 3.jpeg
+  image: 4.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Computer Science</p>
@@ -27,6 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the Department of Computer Science at the [University of Illinois Chicago](https://www.uic.edu/) since 2024. Before that, I received my Bachelor's degree from [Sichuan University](https://en.scu.edu.cn/). My research focuses on understanding and improving large language models through the lens of linear representation hypothesis, as well as developing effective training methodologies including supervised fine-tuning and reinforcement learning.
+I am a PhD student in the Department of Computer Science at the [University of Illinois Chicago](https://www.uic.edu/) since 2024, working with [Prof.Natalie Parde](https://www.natalieparde.com/). rior to this, I earned my Bachelor’s degree from [Sichuan University](https://en.scu.edu.cn/). 
 
-My work aims to uncover the underlying mechanisms of how LLMs represent and process information, with the goal of creating more interpretable, efficient, and controllable language models. I am particularly interested in exploring how linear algebraic structures in neural representations can be leveraged to better understand model behavior and guide training strategies.
+My research focuses on understanding and improving large language models through the lens of linear representation hypothesis, as well as developing effective training methodologies including supervised fine-tuning and reinforcement learning. My work aims to uncover the underlying mechanisms of how LLMs represent and process information, with the goal of creating more interpretable, efficient, and controllable language models. I am particularly interested in exploring how linear structures in neural representations can be leveraged to better understand model behavior and guide training strategies.
