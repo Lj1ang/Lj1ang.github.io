@@ -6,7 +6,7 @@ subtitle: PhD Student
 
 profile:
   align: right
-  image: 4.jpg
+  image: 1.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Computer Science</p>
