@@ -6,7 +6,7 @@ subtitle: Lei — it’s pronounced “lay,” like Lay’s chips.
 
 profile:
   align: right
-  image: 7.jpeg #8.jpeg
+  image: 8.jpeg #7.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>850 W Taylor St, Chicago, IL 60607</p>
