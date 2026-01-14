@@ -2,16 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Lei(磊) — it’s pronounced “lay,” like Lay’s chips.
+subtitle: Lei — it’s pronounced “lay,” like Lay’s chips.
 
 profile:
   align: right
-  image: 1.jpeg
+  image: 6.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Department of Computer Science</p>
-    <p>University of Illinois Chicago</p>
-    <p>Chicago, IL</p>
+    <p>850 W Taylor St, Chicago, IL 60607</p>
+    <p></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -29,4 +28,6 @@ latest_posts:
 
 I am a PhD student in the Department of Computer Science at the [University of Illinois Chicago](https://www.uic.edu/) since 2024, working with [Prof.Natalie Parde](https://www.natalieparde.com/). rior to this, I earned my Bachelor’s degree from [Sichuan University](https://en.scu.edu.cn/). 
 
-My research focuses on understanding and improving large language models through the lens of linear representation hypothesis, as well as developing effective training methodologies including supervised fine-tuning and reinforcement learning. My work aims to uncover the underlying mechanisms of how LLMs represent and process information, with the goal of creating more interpretable, efficient, and controllable language models. I am particularly interested in exploring how linear structures in neural representations can be leveraged to better understand model behavior and guide training strategies.
+My research focuses on understanding and improving large language models through the lens of linear representation hypothesis, as well as developing effective training methodologies including supervised fine-tuning and reinforcement learning. 
+
+My work aims to uncover the underlying mechanisms of how LLMs represent and process information, with the goal of creating more interpretable, efficient, and controllable language models. I am particularly interested in exploring how linear structures in neural representations can be leveraged to better understand model behavior and guide training strategies.
