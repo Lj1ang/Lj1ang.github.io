@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Lei — it’s pronounced “lay,” like Lay’s chips.
 
