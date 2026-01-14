@@ -2,13 +2,11 @@
 layout: about
 title: about
 permalink: /
-nav: true
-nav_order: 1
 subtitle: PhD Student, Department of Computer Science, University of Illinois Chicago
 
 profile:
   align: right
-  image: 3.jpg
+  image: 3.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Computer Science</p>
