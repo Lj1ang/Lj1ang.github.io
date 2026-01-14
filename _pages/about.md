@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student
+subtitle: Lei(磊) — it’s pronounced “lay,” like Lay’s chips.
 
 profile:
   align: right
