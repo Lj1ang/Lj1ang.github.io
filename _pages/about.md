@@ -6,7 +6,7 @@ subtitle: PhD Student, Department of Computer Science, University of Illinois Ch
 
 profile:
   align: right
-  image: 2.jpg
+  image: 3.jpeg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Computer Science</p>
