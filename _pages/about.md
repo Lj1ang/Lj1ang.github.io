@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student in the Department of Computer Science at the [University of Illinois Chicago](https://www.uic.edu/) since 2024, working with [Prof.Natalie Parde](https://www.natalieparde.com/). rior to this, I earned my Bachelor’s degree from [Sichuan University](https://en.scu.edu.cn/). 
+I am a PhD student in the Department of Computer Science at the [University of Illinois Chicago](https://www.uic.edu/) since 2024, working with [Prof.Natalie Parde](https://www.natalieparde.com/). Prior to this, I earned my Bachelor’s degree from [Sichuan University](https://en.scu.edu.cn/). 
 
 My research focuses on understanding and improving large language models through the lens of linear representation hypothesis, as well as developing effective training methodologies including supervised fine-tuning and reinforcement learning. 
 
