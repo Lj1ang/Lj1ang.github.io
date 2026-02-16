@@ -1,11 +1,11 @@
 metadata:
-  last_updated: '2026-01-16'
+  last_updated: '2026-02-16'
 papers:
   ojGyTUYAAAAJ:2osOgNQ5qMEC:
     citations: 3
     title: 'Threshold filtering packing for supervised fine-tuning: Training related samples within packs'
     year: '2025'
   ojGyTUYAAAAJ:qjMakFHDy7sC:
-    citations: 3
+    citations: 6
     title: 'Diagnosing moral reasoning acquisition in language models: Pragmatics and generalization'
     year: '2025'
