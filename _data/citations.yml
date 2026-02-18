@@ -1,10 +1,14 @@
 metadata:
-  last_updated: '2026-02-16'
+  last_updated: '2026-02-18'
 papers:
   ojGyTUYAAAAJ:2osOgNQ5qMEC:
     citations: 3
     title: 'Threshold filtering packing for supervised fine-tuning: Training related samples within packs'
     year: '2025'
+  ojGyTUYAAAAJ:Tyk-4Ss8FVUC:
+    citations: 0
+    title: What Do LLMs Know About Alzheimer's Disease? Fine-Tuning, Probing, and Data Synthesis for AD Detection
+    year: '2026'
   ojGyTUYAAAAJ:qjMakFHDy7sC:
     citations: 6
     title: 'Diagnosing moral reasoning acquisition in language models: Pragmatics and generalization'
