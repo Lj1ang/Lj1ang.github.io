@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-02-18'
+  last_updated: '2026-03-25'
 papers:
   ojGyTUYAAAAJ:2osOgNQ5qMEC:
     citations: 3
@@ -10,6 +10,6 @@ papers:
     title: What Do LLMs Know About Alzheimer's Disease? Fine-Tuning, Probing, and Data Synthesis for AD Detection
     year: '2026'
   ojGyTUYAAAAJ:qjMakFHDy7sC:
-    citations: 6
+    citations: 7
     title: 'Diagnosing moral reasoning acquisition in language models: Pragmatics and generalization'
     year: '2025'
