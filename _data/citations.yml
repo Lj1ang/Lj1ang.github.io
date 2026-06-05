@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-04'
+  last_updated: '2026-06-05'
 papers:
   ojGyTUYAAAAJ:2osOgNQ5qMEC:
     citations: 4
@@ -7,7 +7,7 @@ papers:
     year: '2025'
   ojGyTUYAAAAJ:Tyk-4Ss8FVUC:
     citations: 1
-    title: What Do LLMs Know About Alzheimer's Disease? Fine-Tuning, Probing, and Data Synthesis for AD Detection
+    title: "What Do LLMs Know About Alzheimer\u2019s Disease? Multi-loss Fine-Tuning and Probing for AD Detection"
     year: '2026'
   ojGyTUYAAAAJ:qjMakFHDy7sC:
     citations: 8
