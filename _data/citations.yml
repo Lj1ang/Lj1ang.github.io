@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-05'
+  last_updated: '2026-07-10'
 papers:
   ojGyTUYAAAAJ:2osOgNQ5qMEC:
     citations: 4
     title: 'Threshold filtering packing for supervised fine-tuning: Training related samples within packs'
     year: '2025'
   ojGyTUYAAAAJ:Tyk-4Ss8FVUC:
-    citations: 1
+    citations: 2
     title: "What Do LLMs Know About Alzheimer\u2019s Disease? Multi-loss Fine-Tuning and Probing for AD Detection"
     year: '2026'
   ojGyTUYAAAAJ:qjMakFHDy7sC:
