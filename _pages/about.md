@@ -32,4 +32,4 @@ My research focuses on making large language model (LLM) training more efficient
 
 I am also interested in building better process and outcome reward models, particularly process reward models that capture meaningful reasoning progress and provide effective learning signals without relying on expensive step-level annotations.
 
-Beyond improving training methods, I study how LLMs encode and acquire information internally, using techniques such as linear probing to understand how training shapes their representations and behavior. Ultimately, I aim to connect insights into how LLMs learn with practical methods for training more efficient, reliable, and interpretable models.
+Beyond improving training methods, I study how LLMs encode and acquire information internally, using techniques such as linear probing to understand how training shapes their representations and behavior. I aim to connect insights into how LLMs learn with practical methods for training more efficient, reliable, and interpretable models.
